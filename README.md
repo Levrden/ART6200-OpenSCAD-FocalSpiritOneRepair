@@ -13,7 +13,7 @@ Je ne suis pas le seul à avoir eu ce problème ! https://www.youtube.com/watch?
 
 Le casque sans les pièces : ![casque](photos/casque.jpg)
 
-La qualité du plastique... la pièce femelle à changer : ![femelle](photos/casque.jpg)
+La qualité du plastique... la pièce femelle à changer : ![femelle](photos/femelle.jpg)
 
 L'ancienne version, que j'avais réalisé en deux parties pour l'assemblage. : ![old3d](photos/old3d.jpg)
 
