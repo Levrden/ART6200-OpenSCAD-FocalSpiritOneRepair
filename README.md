@@ -1,5 +1,6 @@
 # ART6200-OpenSCAD-FocalSpiritOneRepair
 
+Réalisé avec openSCAD : https://github.com/openscad/openscad
 
 Pièce femelle pour réparation d'arceau de casque focale Spirit One.
 Un bon casque que j'ai acheté il y a un moment et qui s'est rapidement cassé, sans prise en charge de la garantie. 
