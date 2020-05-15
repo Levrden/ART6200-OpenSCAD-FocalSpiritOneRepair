@@ -6,29 +6,36 @@ Donc une très bonne raison de la réaliser ici.
 Je ne suis pas le seul à avoir eu ce problème ! https://www.youtube.com/watch?v=aj3AncT0iOc
 Les photos sont visibles sur le gitHub : https://github.com/Levrden/ART6200-OpenSCAD-FocalSpiritOneRepair*/
 color( "DimGray")
+
+
 union(){
+e=0.1;//variable de décalage pour éviter les artefacts après une différence
+    
+//Réglage de la qualité des arrondis
+$fa=1;
+$fs=0.2;
 //Pièce principale avec rainure
 difference(){
 //Pièce Principale
-    rotate_extrude(angle = 47.7, $fn=400) polygon( points=[[67.52,0],[75.52,0],[75.52,28],[67.52,28],[67.52,26],[74.52,26],[74.52,2],[67.52,2]] );
+    rotate_extrude(angle = 47.7) polygon( points=[[67.52,0],[75.52,0],[75.52,28],[67.52,28],[67.52,26],[74.52,26],[74.52,2],[67.52,2]] );
 //Rainure
-rotate_extrude(angle = 41.1, $fn=400) polygon( points=[[68.52,27],[69.52,27],[69.52,1],[68.52,1]] );
+rotate_extrude(angle = 41.1) polygon( points=[[68.52,27],[69.52,27],[69.52,1],[68.52,1]] );
 //Décalage de la rainure
-rotate_extrude(angle = 10, $fn=400) polygon( points=[[67.52,27],[68.52,27],[68.52,1],[67.52,1]] );
+rotate_extrude(angle = 10) polygon( points=[[67.52-e,27],[68.52+e,27],[68.52+e,1],[67.52-e,1]] );
 }
 //Encoche
 rotate([0,0,32.9]){ //Décalage de l'origine
     difference(){
         //Encoche
-        rotate_extrude(angle = 7.4, $fn=400) polygon( points=[[71.02,26],[72.02,26],[72.02,2],[71.02,2]] );
+        rotate_extrude(angle = 7.4) polygon( points=[[71.02,26],[72.02,26],[72.02,2],[71.02,2]] );
         //Décalage en épaisseur
-        rotate_extrude(angle = 7.4, $fn=400) polygon( points=[[71.02,25],[72.02,25],[72.02,3],[71.02,3]] );
+        rotate_extrude(angle = 7.4) polygon( points=[[71.02,25],[72.02,25],[72.02,3],[71.02,3]] );
 }}
 //Fermeture en bout de pièce
 rotate([0,0,44.5]){
 
         //Encoche
-        rotate_extrude(angle = 3.2, $fn=400) polygon( points=[[67.52,27],[68.52,27],[68.52,1],[67.52,1]] );
+        rotate_extrude(angle = 3.2) polygon( points=[[67.52,27],[68.52,27],[68.52,1],[67.52,1]] );
 }
 //Trous taraudés et cales
 union(){
@@ -58,8 +65,8 @@ module trouTar(){
     union(){
         //Trou Taraudé
         difference(){
-        cylinder(4,2,2,true,$fn=50);//Base
-        cylinder(5,.5,.5,true,$fn=50);//Trou
+        cylinder(4,2,2,true);//Base
+        cylinder(5,.5,.5,true);//Trou
         }
         //Cale en croix
         translate([0,0,1.35])rotate([0,0,45]){
