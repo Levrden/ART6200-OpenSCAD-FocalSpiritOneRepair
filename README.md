@@ -1,5 +1,6 @@
 # ART6200-OpenSCAD-FocalSpiritOneRepair
 
+Réalisé avec openSCAD : https://github.com/openscad/openscad
 
 Pièce femelle pour réparation d'arceau de casque focale Spirit One.
 Un bon casque que j'ai acheté il y a un moment et qui s'est rapidement cassé, sans prise en charge de la garantie. 
@@ -10,12 +11,14 @@ Donc une très bonne raison de la réaliser ici.
 
 Je ne suis pas le seul à avoir eu ce problème ! https://www.youtube.com/watch?v=aj3AncT0iOc
 
-Le casque sans les pièces : ![alt text](photos/casque.jpg)
+Le casque sans les pièces : ![casque](photos/casque.jpg)
 
-L'ancienne version, que j'avais réalisé en deux parties pour l'assemblage. : ![alt text](photos/old3d.jpg)
+La qualité du plastique... la pièce femelle à changer : ![femelle](photos/casque.jpg)
 
-La partie mâle qui n'est pas cassée :  ![alt text](photos/male.jpg)
+L'ancienne version, que j'avais réalisé en deux parties pour l'assemblage. : ![old3d](photos/old3d.jpg)
 
-Les cales et vis :  ![alt text](photos/cales.jpg)
+La partie mâle qui n'est pas cassée :  ![male1](photos/male1.jpg)![male2](photos/male2.jpg)
 
-Les rainures :  ![alt text](photos/rainures.jpg)
+Les cales et vis :  ![cales1](photos/cales1.jpg)![cales2](photos/cales2.jpg)
+
+Les rainures :  ![rainures](photos/rainures.jpg)
